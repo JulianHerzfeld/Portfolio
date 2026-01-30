@@ -1,0 +1,80 @@
+.main-content {
+    position: relative;
+    height: 660px;
+    // background-color: #0B042D;
+    // background: linear-gradient(to bottom left, #0B042D, #1F0B7F);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 105px;
+    padding-right: 52px;
+
+    >div {
+        >div {
+            >h1 {
+                font-size: 82px;
+                color: #02F4BF;
+            }
+
+            >h2 {
+                font-size: 54px;
+                color: #02F4BF;
+            }
+        }
+    }
+}
+
+.portrait {
+    width: 539px;
+    height: 554px;
+}
+
+.contact-me {
+    transform: rotate(270deg);
+    position: absolute;
+    top: 140px;
+    left: -56px;
+    color: #E15544;
+    font-size: 18px;
+    background-color: #0B042D;
+    width: 169px;
+    height: 52px;
+    border: 1px solid #02F4BF;
+    transition: color 0.5s ease;
+
+    &:hover {
+        color: #02F4BF;
+        cursor: pointer;
+    }
+}
+
+.content-left {
+    position: relative;
+    height: 575px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.arrow-hover-container {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+
+    &:hover {
+        top: 39%;
+        left: 44.5%;
+        cursor: pointer;
+
+        .arrow-down {
+            display: none;
+        }
+
+        .arrow-down-hover {
+            display: block;
+        }
+    }
+}
+
+.arrow-down-hover {
+    display: none;
+}

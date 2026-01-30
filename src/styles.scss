@@ -1,4 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
-body {
+@font-face {
+    font-family: 'roboto-mono';
+    src: url('assets/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'handjet';
+    src: url('assets/fonts/Handjet-VariableFont_ELGR,ELSH,wght.ttf') format('truetype');
+}
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto-mono';
+    scroll-behavior: smooth;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    background: linear-gradient(
+        155deg,
+        #0B042D 0%,
+        #0B042D 20%,
+        #1F0B7F 55%,
+        #0B042D 90%,
+        #0B042D 100%
+    );
+}
+
+.d-none {
+    display: none !important;
 }
