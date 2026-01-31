@@ -14,7 +14,7 @@ export class MyProjectsComponent {
 
   projects = [
     { title: 'Join',
-      skills: 'Angular | TypeScript | HTML | CSS | Firebase',
+      skills: 'JavaScript | HTML | CSS | Firebase',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       imgUrlProjekt: 'assets/img/projects/join.svg',
       githubUrl: '#',

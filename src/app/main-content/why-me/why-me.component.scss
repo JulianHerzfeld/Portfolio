@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding-left: 105px;
-    padding-right: 52px;
+    padding-right: 111px;
     color: white;
     gap: 70px;
     height: 556px;
@@ -195,6 +195,7 @@
         background-color: #02F4BF;
         border: none;
         font-weight: bold;
+        font-size: 18px;
 
         &:hover {
             cursor: pointer;

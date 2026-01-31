@@ -1,9 +1,9 @@
-<section class="my-projects-content">
+<section class="my-projects-content content-limitation">
     <h1>My Projects</h1>
 
 </section>
 
-<div class="projects-main-content">
+<div class="projects-main-content content-limitation">
     <app-single-project *ngFor="let project of projects; let i = index;" [title]="project.title"
         [description]="project.description" [skills]="project.skills" [imgUrlProjekt]="project.imgUrlProjekt"
         [githubUrl]="project.githubUrl" [liveTestUrl]="project.liveTestUrl" [reverse]="i % 2 === 1">

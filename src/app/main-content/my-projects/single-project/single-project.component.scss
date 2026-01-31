@@ -1,8 +1,10 @@
 .single-project-content {
     display: flex;
     justify-content: space-between;
-    gap: 48px;
+    gap: 200px;
     margin-top: 64px;
+    padding-left: 105px;
+    padding-right: 111px;
 
     >div {
         >img {
@@ -69,6 +71,22 @@
     display: flex;
     gap: 24px;
     margin-top: 48px;
+
+    .btn-git {
+        transition: color 0.5s ease;
+
+        &:hover {
+            color: #02F4BF;
+        }
+    }
+
+    .btn-live-test {
+        transition: color 0.5s ease;
+
+        &:hover {
+            color: #E15544;
+        }
+    }
 }
 
 .single-project-btns.btn-reverse {
