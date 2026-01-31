@@ -1,0 +1,12 @@
+<section class="my-projects-content">
+    <h1>My Projects</h1>
+
+</section>
+
+<div class="projects-main-content">
+    <app-single-project *ngFor="let project of projects; let i = index;" [title]="project.title"
+        [description]="project.description" [skills]="project.skills" [imgUrlProjekt]="project.imgUrlProjekt"
+        [githubUrl]="project.githubUrl" [liveTestUrl]="project.liveTestUrl" [reverse]="i % 2 === 1">
+    </app-single-project>
+
+</div>

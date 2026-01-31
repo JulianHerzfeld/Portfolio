@@ -1,0 +1,204 @@
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 105px;
+    padding-right: 52px;
+    color: white;
+    gap: 70px;
+    height: 556px;
+
+    >div {
+        >img {
+            width: 490px;
+            height: 452px;
+        }
+    }
+}
+
+.why-me-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 670px;
+}
+
+.why-me-description {
+    text-align: end;
+    margin-bottom: 16px;
+
+    >h1 {
+        color: #E15544;
+        font-size: 54px;
+    }
+
+    >p {
+        color: #02F4BF;
+        font-size: 16px;
+    }
+}
+
+.img-animation {
+    transition: opacity 0.7s ease;
+}
+
+.vector-imgs {
+    position: relative;
+
+    .vector {
+        opacity: 1;
+    }
+
+    .vector-hover {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &:hover {
+        .vector {
+            opacity: 0;
+        }
+
+        .vector-hover {
+            opacity: 1;
+        }
+    }
+}
+
+
+
+.i-am-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.i-am-located {
+    display: flex;
+    gap: 64px;
+    padding-left: 100px;
+
+    >h2 {
+        color: #E15544;
+        font-size: 48px;
+    }
+
+    >div {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+
+        >p {
+            color: #02F4BF;
+            font-size: 18px;
+        }
+    }
+}
+
+.i-am-relocate {
+    display: flex;
+    justify-content: end;
+    gap: 208px;
+    padding-right: 55px;
+
+    >div {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        >p {
+            color: #02F4BF;
+            font-size: 18px;
+        }
+    }
+}
+
+.suitcase-imgs {
+    position: relative;
+
+    .suitcase-hover {
+        opacity: 1;
+    }
+
+    .suitcase-hover {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &:hover {
+        .suitcase {
+            opacity: 0;
+        }
+
+        .suitcase-hover {
+            opacity: 1;
+        }
+    }
+}
+
+.i-am-remote {
+    display: flex;
+    justify-content: end;
+    gap: 125px;
+
+    >div {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .remote-icon {
+            padding-bottom: 10px;
+        }
+
+        >p {
+            color: #02F4BF;
+            font-size: 18px;
+        }
+    }
+}
+
+.remote-hover {
+    opacity: 0;
+    position: absolute;
+    top: -7px;
+    left: -8px;
+}
+
+.remote-imgs {
+    position: relative;
+
+    .img-animation-remote {
+        transition: opacity 0.8s ease;
+    }
+
+    &:hover {
+        .remote-icon {
+            opacity: 0;
+        }
+
+        .remote-hover {
+            opacity: 1;
+        }
+    }
+}
+
+.i-am-talk {
+    display: flex;
+    justify-content: end;
+    margin-top: 33px;
+
+    >button {
+        width: 169px;
+        height: 52px;
+        background-color: #02F4BF;
+        border: none;
+        font-weight: bold;
+
+        &:hover {
+            cursor: pointer;
+            color: #E15544;
+        }
+    }
+}

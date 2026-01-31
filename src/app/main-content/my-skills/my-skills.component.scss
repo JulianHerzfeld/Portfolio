@@ -1,0 +1,19 @@
+.my-skills-content {
+    padding-left: 105px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 104px;
+
+    >h1 {
+        color: #E15544;
+        font-size: 54px;
+    }
+}
+
+.all-skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 120px;
+}

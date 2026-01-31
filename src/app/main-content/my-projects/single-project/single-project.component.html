@@ -1,0 +1,22 @@
+<div class="single-project-content" [class.reverse]="reverse">
+    <div>
+        <img *ngIf="imgUrlProjekt" [src]="imgUrlProjekt" alt="">
+    </div>
+    <div class="single-project-infos" [class.text-reverse]="reverse">
+        <h1>{{ title }}</h1>
+        <div class="single-project-skills">
+            <p>{{ skills }}</p>
+        </div>
+        <div>
+            <p>{{ description }}</p>
+        </div>
+        <div class="single-project-btns" [class.btn-reverse]="reverse">
+            <a *ngIf="githubUrl" [href]="githubUrl" target="_blank" rel="noopener noreferrer" class="btn-git">
+                GitHub
+            </a>
+            <a *ngIf="liveTestUrl" [href]="liveTestUrl" target="_blank" rel="noopener noreferrer" class="btn-live-test">
+                Live Test
+            </a>
+        </div>
+    </div>
+</div>
