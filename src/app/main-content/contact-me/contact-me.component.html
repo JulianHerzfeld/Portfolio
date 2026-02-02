@@ -30,10 +30,10 @@
             </div>
         </div>
 
-        <div>
-            <img class="contac-me-arrow" src="assets/img/icons/arrow-up.svg" alt="">
-            <img class="contac-me-arrow-hover" src="assets/img/icons/arrow-up-hover.svg" alt="">
-        </div>
+        <button type="button" class="scroll-top" (click)="scrollToTop()" aria-label="Scroll to top">
+            <img src="assets/img/icons/arrow-up.svg" alt="" />
+        </button>
+
     </div>
     <div class="contact-me-input-wrapper">
         <div class="contact-me-input-left">
@@ -49,13 +49,14 @@
         </div>
     </div>
     <div class="contact-me-send-section">
-        <div class="contact-me-akzept">
-            <img src="assets/img/icons/checkbox.svg" alt="">
-            <p>I've read the <a href="#">privacy police</a> and agree to the procressing of my data as outlined.</p>
-        </div>
+        <label class="contact-me-checkbox">
+            <input type="checkbox" [formControl]="checkbox" />
+            <span class="checkbox-image"></span>
+            <span>I've read the <a href="#">privacy policy</a> and agree to the procressing of my data as
+                outlined.</span>
+        </label>
         <div class="contact-me-send">
-            <button>Send</button>
+            <button [disabled]="!checkbox.value">Send</button>
         </div>
-
     </div>
 </section>

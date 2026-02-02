@@ -1,0 +1,78 @@
+.footer {
+    padding-left: 105px;
+    padding-right: 111px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    >div {
+        color: #E15544;
+    }
+}
+
+.logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    font-size: 54px;
+    font-family: 'handjet';
+    font-weight: bold;
+}
+
+.copyright {
+    display: flex;
+    align-items: flex-end;
+
+    >p {
+        font-size: 23px;
+    }
+}
+
+.footer-buttons {
+    display: flex;
+    align-items: flex-end;
+    gap: 33px;
+
+    >button {
+        background-color: transparent;
+        border: unset;
+
+        &:hover {
+            cursor: pointer;
+
+            .github-svg {
+                fill: #02F4BF;
+            }
+
+            .email-svg {
+                fill: #02F4BF;
+            }
+        }
+    }
+}
+
+.footer-links {
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 100px;
+
+    >a {
+        text-decoration: none;
+        color: #E15544;
+        font-size: 16px;
+        font-weight: 300;
+
+        &:hover {
+            cursor: pointer;
+            color: #02F4BF;
+        }
+    }
+}

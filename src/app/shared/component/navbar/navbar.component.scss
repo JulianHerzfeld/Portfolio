@@ -2,16 +2,20 @@
     position: sticky;
     top: 0;
     width: 100%;
-    background: linear-gradient(
-        180deg,
-        #0B042D 0%,
-        #0B042D 30%,
-        #0B042D 65%,
-        rgba(11, 4, 45, 0.8) 80%,
-        rgba(11, 4, 45, 0.7) 90%,
-        rgba(11, 4, 45, 0.5) 100%
-    );
+    background: linear-gradient(180deg,
+            #0B042D 0%,
+            #0B042D 30%,
+            #0B042D 65%,
+            rgba(11, 4, 45, 0.8) 80%,
+            rgba(11, 4, 45, 0.7) 90%,
+            rgba(11, 4, 45, 0.5) 100%);
     z-index: 100;
+}
+
+a {
+    text-decoration: none;
+    color: #E15544;
+    font-weight: bold;
 }
 
 .navbar {
@@ -29,10 +33,13 @@
     }
 }
 
-a {
-    text-decoration: none;
+p {
     color: #E15544;
     font-weight: bold;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .navigation {
@@ -46,6 +53,7 @@ a {
 
         >a {
             font-size: 22px;
+
 
             &:hover {
                 color: #02F4BF;
@@ -63,6 +71,7 @@ a {
 .language {
     display: flex;
     gap: 6px;
+
     >a {
         font-size: 18px;
 

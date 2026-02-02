@@ -3,7 +3,7 @@
     
     <div class="all-skills">
         <img *ngFor="let skill of skillImgs; let i = index;" src="{{skill}}" alt="">
-        <img src="assets/img/icons/challenge.svg" alt="">
+        <img class="challenge-me" (click)="goToContact()" src="assets/img/icons/challenge.svg" alt="">
     </div>
     
 </section>

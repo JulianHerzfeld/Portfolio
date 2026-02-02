@@ -1,6 +1,7 @@
 .contact-me-content {
     padding-left: 105px;
     padding-right: 111px;
+    margin-bottom: 88px;
 }
 
 a {
@@ -25,27 +26,21 @@ a {
     }
 }
 
-.contac-me-arrow-hover {
-    display: none;
-    position: relative;
-    left: 8px;
-}
-
 .contact-me-infos-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 24px;
 
-    >div {
-        &:hover {
-            .contac-me-arrow {
-                display: none;
-            }
+    .scroll-top {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
 
-            .contac-me-arrow-hover {
-                display: block;
-            }
+        &:hover img {
+            position: relative;
+            left: 8px;
+            content: url('/assets/img/icons/arrow-up-hover.svg');
         }
     }
 }
@@ -148,16 +143,50 @@ a {
 .contact-me-send-section {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 88px;
     height: 74px;
 }
 
-.contact-me-akzept {
+.contact-me-checkbox {
     display: flex;
     align-items: flex-start;
     gap: 5px;
+    cursor: pointer;
+    user-select: none;
+    height: 24px;
 
-    >p {
+    input {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .checkbox-image {
+        width: 24px;
+        height: 24px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('/assets/img/icons/unchecked-box.svg');
+        transition: background-image 0.15s ease;
+    }
+
+    &:hover:not(:has(a:hover)) input:not(:checked)+.checkbox-image {
+        background-image: url('/assets/img/icons/unchecked-box-hover.svg');
+    }
+
+    input:checked+.checkbox-image {
+        background-image: url('/assets/img/icons/checked-box.svg');
+    }
+
+    &:hover:not(:has(a:hover)) input:checked+.checkbox-image {
+        background-image: url('/assets/img/icons/checked-box-hover.svg');
+    }
+
+    input:focus-visible+.checkbox-image {
+        outline: 2px solid #22f3ff;
+        outline-offset: 3px;
+    }
+
+    >span {
         font-size: 16px;
         color: #02F4BF;
 
@@ -185,14 +214,21 @@ a {
         color: #E15544;
         font-size: 18px;
         transition: color 0.5s ease;
+
         &:hover {
             color: #02F4BF;
             cursor: pointer;
         }
+
         &:active {
             transition: none;
             border: 1px solid #E15544;
             color: #E15544;
         }
+    }
+
+    >button:disabled {
+        border: 1px solid #827B7B;
+        color: #827B7B;
     }
 }

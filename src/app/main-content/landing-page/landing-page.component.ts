@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Scroll } from '@angular/router';
+import { ScrollService } from '../../../models/scroll-service';
 
 @Component({
   selector: 'app-landing-page',
@@ -8,5 +10,11 @@ import { Component } from '@angular/core';
   styleUrl: './landing-page.component.scss'
 })
 export class LandingPageComponent {
+
+  constructor(private scrollService: ScrollService) { }
+
+  goToContact() {
+    this.scrollService.scrollToId('contact-me');
+  }
 
 }

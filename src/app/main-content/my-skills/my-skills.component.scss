@@ -18,3 +18,8 @@
     align-items: flex-start;
     gap: 120px;
 }
+
+.challenge-me:hover {
+    cursor: pointer;
+    filter: brightness(1.5);
+}

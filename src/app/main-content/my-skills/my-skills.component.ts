@@ -1,5 +1,6 @@
 import { NgForOf } from '@angular/common';
 import { Component } from '@angular/core';
+import { ScrollService } from '../../../models/scroll-service';
 
 
 @Component({
@@ -10,6 +11,8 @@ import { Component } from '@angular/core';
   styleUrl: './my-skills.component.scss'
 })
 export class MySkillsComponent {
+
+  constructor(private scrollService: ScrollService) { }
 
   skillImgs: string[] = [
     'assets/img/icons/angular.svg',
@@ -22,5 +25,10 @@ export class MySkillsComponent {
     'assets/img/icons/git.svg',
     'assets/img/icons/material-design.svg'
   ];
+
+
+  goToContact() {
+    this.scrollService.scrollToId('contact-me');
+  }
 
 }
