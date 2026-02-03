@@ -17,14 +17,14 @@ export class MyProjectsComponent {
       skills: 'JavaScript | HTML | CSS | Firebase',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       imgUrlProjekt: 'assets/img/projects/join.svg',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/JulianHerzfeld/Join',
       liveTestUrl: '#'
     },
     { title: 'Sharkie',
       skills: 'JavaScript | HTML | CSS',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       imgUrlProjekt: 'assets/img/projects/sharkie.svg',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/JulianHerzfeld/Sharkie-Project',
       liveTestUrl: '#'
     }
   ];

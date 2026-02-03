@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
-import { scrollToTop } from '../../../models/scroll-utils';
+import { ScrollService } from '../../../models/scroll-service';
 
 @Component({
   selector: 'app-contact-me',
@@ -10,7 +10,25 @@ import { scrollToTop } from '../../../models/scroll-utils';
   styleUrl: './contact-me.component.scss'
 })
 export class ContactMeComponent {
+
+  constructor(private service: ScrollService) { }
+
+  
   checkbox = new FormControl(false);
-  scrollToTop = scrollToTop;
+
+
+  goTop() {
+    this.service.scrollToTop();
+  }
+
+
+  mailNow() {
+    this.service.openMail();
+  }
+
+
+  callNow() {
+    this.service.call();
+  }
 
 }

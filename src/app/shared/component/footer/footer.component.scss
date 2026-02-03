@@ -39,7 +39,8 @@
     align-items: flex-end;
     gap: 33px;
 
-    >button {
+    >a {
+        text-decoration: none;
         background-color: transparent;
         border: unset;
 

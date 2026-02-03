@@ -70,6 +70,14 @@ a {
     }
 
     &:hover {
+        >a {
+            cursor: pointer;
+        }
+
+        >svg {
+            cursor: pointer;
+        }
+
         .email-icon {
             fill: #02F4BF;
         }
@@ -82,7 +90,15 @@ a {
     align-items: center;
     gap: 18px;
 
+    >svg {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
     &:hover {
+        cursor: pointer;
+
         .phone-icon {
             fill: #02F4BF;
         }

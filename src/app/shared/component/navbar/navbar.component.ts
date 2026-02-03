@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { scrollToTop } from '../../../../models/scroll-utils';
+import { ScrollService } from '../../../../models/scroll-service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,6 +9,13 @@ import { scrollToTop } from '../../../../models/scroll-utils';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-  scrollToTop = scrollToTop;
+
+
+  constructor(private scrollService: ScrollService) { }
+
+
+  goTop() {
+    this.scrollService.scrollToTop();
+  }
 
 }

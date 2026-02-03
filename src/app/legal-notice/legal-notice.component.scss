@@ -1,0 +1,34 @@
+.legal-notice-content {
+    padding-left: 105px;
+    padding-right: 111px;
+    margin-bottom: 88px;
+
+    >h1 {
+        color: #E15544;
+        font-size: 54px;
+        font-weight: bold;
+    }
+
+    >h2 {
+        color: #E15544;
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    >p,
+    .adress {
+        color: #02F4BF;
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 15px;
+    }
+}
+
+a {
+    color: #E15544;
+
+    &:hover {
+        filter: brightness(1.5);
+    }
+}

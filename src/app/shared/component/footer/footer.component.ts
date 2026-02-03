@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScrollService } from '../../../../models/scroll-service';
 
 @Component({
   selector: 'app-footer',
@@ -8,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
+
+
+  constructor(private service: ScrollService) { }
+
+
+  mailNow() {
+    this.service.openMail();
+  }
 
 }
