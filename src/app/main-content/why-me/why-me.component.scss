@@ -1,11 +1,14 @@
 .main-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-left: 105px;
     padding-right: 111px;
     color: white;
     gap: 70px;
-    height: 556px;
+    margin-bottom: 104px;
+    // height: 556px;
+
 
     >div {
         >img {

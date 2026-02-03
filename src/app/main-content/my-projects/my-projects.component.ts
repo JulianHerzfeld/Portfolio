@@ -22,7 +22,7 @@ export class MyProjectsComponent {
     },
     { title: 'Sharkie',
       skills: 'JavaScript | HTML | CSS',
-      description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      description: '2D action game based on an object-oriented approach. Control Sharkie underwater and defeat enemies by shooting bubbles.',    //2D-Action-Game auf objektorientierter Basis. Steuere Sharkie durch die Unterwasserwelt und besiege Gegner mit Blubberblasen.
       imgUrlProjekt: 'assets/img/projects/sharkie.svg',
       githubUrl: 'https://github.com/JulianHerzfeld/Sharkie-Project',
       liveTestUrl: '#'
