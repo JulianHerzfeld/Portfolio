@@ -33,19 +33,19 @@ a {
     }
 }
 
-p {
-    color: #E15544;
-    font-weight: bold;
-
-    &:hover {
-        cursor: pointer;
-    }
-}
-
 .navigation {
     display: flex;
     align-items: center;
     gap: 48px;
+
+    >p {
+        color: #E15544;
+        font-weight: bold;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
 
     >div {
         display: flex;
