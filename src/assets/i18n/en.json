@@ -1,6 +1,22 @@
 {
+
+    "navbar": {
+        "why-me": "Why me",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
     "landing": {
         "contact-btn": "CONTACT ME",
         "title": "FRONTEND DEVELOPER"
+    },
+    "why-me": {
+        "title": "Why me",
+        "description": "I am an aspiring frontend developer with a strong interest in web and software development. Programming excites me because it allows me to turn creative ideas into functional solutions while continuously learning new things. I am particularly motivated by problem-solving and the sense of achievement when an application works exactly as intended. My goal is to continuously develop my skills and pursue a long-term career as a frontend or web developer.",
+        "i-am": "I am",
+        "location": "located \n in Aschaffenburg",
+        "relocate": "open to \n relocate",
+        "remote": "open to \n work remote",
+        "talk-btn": "Let's talk"
     }
 }

@@ -4,29 +4,19 @@
     </div>
     <div class="why-me-content">
         <div class="why-me-description">
-            <h1>Why me</h1>
+            <h1>{{'why-me.title' | translate}}</h1>
             <p>
-                I am an aspiring frontend developer with a strong interest in web and software development. Programming
-                excites me because it allows me to turn creative ideas into functional solutions while continuously
-                learning new things. I am particularly motivated by problem-solving and the sense of achievement when an
-                application works exactly as intended. My goal is to continuously develop my skills and pursue a
-                long-term career as a frontend or web developer.
+                {{'why-me.description' | translate}}
             </p>
-
-            <!-- Ich bin angehender Frontend-Entwickler mit starkem Interesse an Web- und Softwareentwicklung. Programmieren
-            begeistert mich, weil es mir ermöglicht, kreative Ideen in funktionierende Lösungen umzusetzen und dabei
-            ständig Neues zu lernen. Besonders reizt mich das Lösen von Problemen sowie das Erfolgserlebnis, wenn eine
-            Anwendung genau so funktioniert, wie geplant. Mein Ziel ist es, mich kontinuierlich weiterzuentwickeln und
-            langfristig als Frontend- bzw. Webentwickler zu arbeiten. -->
         </div>
         <div class="i-am-content">
             <div class="i-am-located">
-                <h2>I am</h2>
+                <h2>{{'why-me.i-am' | translate}}</h2>
                 <div class="vector-imgs">
                     <img class="vector img-animation" src="assets/img/icons/vector.svg" alt="">
                     <img class="vector-hover img-animation" src="assets/img/icons/vector-hover.svg" alt="">
-                    <p>located <br>
-                        in Aschaffenburg
+                    <p class="multiline">
+                        {{'why-me.location' | translate}}
                     </p>
                 </div>
             </div>
@@ -35,8 +25,8 @@
                 <div class="suitcase-imgs">
                     <img class="suitcase img-animation" src="assets/img/icons/suitcase.svg" alt="">
                     <img class="suitcase-hover img-animation" src="assets/img/icons/suitcase-rotate.svg" alt="">
-                    <p>open to <br>
-                        relocate
+                    <p class="multiline">
+                        {{'why-me.relocate' | translate}}
                     </p>
                 </div>
             </div>
@@ -44,8 +34,8 @@
                 <div class="remote-imgs">
                     <img class="remote-icon img-animation-remote" src="assets/img/icons/remote.svg" alt="">
                     <img class="remote-hover img-animation-remote" src="assets/img/icons/remote-hover.svg" alt="">
-                    <p>open to <br>
-                        work remote
+                    <p class="multiline">
+                        {{'why-me.remote' | translate}}
                     </p>
                     <img src="assets/img/icons/arrow-bow-up.svg" alt="">
                 </div>
@@ -53,7 +43,7 @@
             </div>
         </div>
         <div class="i-am-talk">
-            <button (click)="goToContact()">Let's talk</button>
+            <button (click)="goToContact()">{{'why-me.talk-btn' | translate}}</button>
         </div>
     </div>
 </section>

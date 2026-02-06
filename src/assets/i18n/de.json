@@ -1,6 +1,21 @@
 {
+    "navbar": {
+        "why-me": "Warum ich",
+        "skills": "Fähigkeiten",
+        "projects": "Projekte",
+        "contact": "Kontakt"
+    },
     "landing": {
         "contact-btn": "KONTAKTIERE MICH",
         "title": "FRONTEND ENTWICKLER"
+    },
+    "why-me": {
+        "title": "Warum ich",
+        "description": "Ich bin angehender Frontend-Entwickler mit starkem Interesse an Web- und Softwareentwicklung. Programmieren begeistert mich, weil es mir ermöglicht, kreative Ideen in funktionierende Lösungen umzusetzen und dabei ständig Neues zu lernen. Besonders reizt mich das Lösen von Problemen sowie das Erfolgserlebnis, wenn eine Anwendung genau so funktioniert, wie geplant. Mein Ziel ist es, mich kontinuierlich weiterzuentwickeln und langfristig als Frontend- bzw. Webentwickler zu arbeiten.",
+        "i-am": "Ich",
+        "location": "Wohne \n in Aschaffenburg",
+        "relocate": " bin bereit \n zum Umzug",
+        "remote": "bin bereit für \n Remote-Arbeit",
+        "talk-btn": "Lass uns reden"
     }
 }

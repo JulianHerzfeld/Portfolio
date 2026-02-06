@@ -3,16 +3,16 @@
         <div class="navigation">
             <p (click)="goTop()" class="logo" href="">&lt;JH&gt;</p>
             <div>
-                <a href="#why-me">Why me</a>
-                <a href="#my-skills">Skills</a>
-                <a href="#my-projects">Projects</a>
-                <a href="#contact-me">Contact</a>
+                <a href="#why-me">{{'navbar.why-me' | translate}}</a>
+                <a href="#my-skills">{{'navbar.skills' | translate}}</a>
+                <a href="#my-projects">{{'navbar.projects' | translate}}</a>
+                <a href="#contact-me">{{'navbar.contact' | translate}}</a>
             </div>
         </div>
         <div class="language">
-            <a (click)="switchLang('de')" href="#">DE</a>
+            <a (click)="switchLang('de')">DE</a>
             <p>|</p>
-            <a (click)="switchLang('en')" href="#">EN</a>
+            <a (click)="switchLang('en')">EN</a>
         </div>
     </div>
 
