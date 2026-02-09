@@ -1,13 +1,12 @@
 <section class="contact-me-content content-limitation">
     <div class="contact-me-headline">
-        <h1>Contact me</h1>
+        <h1>{{'contact.title' | translate}}</h1>
         <img src="assets/img/icons/arrow-right-down.svg" alt="">
     </div>
     <div class="contact-me-infos-wrapper">
         <div class="contact-me-infos">
             <div class="description">
-                <p>I look forward to hearing from you. I am seeking a position as a frontend or web developer and am
-                    motivated to contribute to new projects and apply my skills.</p>
+                <p>{{'contact.description' | translate}}</p>
 
                 <!-- Ich freue mich über Ihre Kontaktaufnahme. Ich suche eine Position als Frontend- oder Webentwickler und
                 bin motiviert, an neuen Projekten mitzuwirken und mein Wissen einzubringen. -->
@@ -41,25 +40,24 @@
     <div class="contact-me-input-wrapper">
         <div class="contact-me-input-left">
             <div class="input-wrapper">
-                <input class="input-left" type="text" placeholder="Your Name" name="Your Name" id="">
+                <input class="input-left" type="text" [placeholder]="'contact.name-placeholder' | translate" name="Your Name" id="">
             </div>
             <div class="input-wrapper">
-                <input class="input-left" type="email" placeholder="Your Email" name="Your Email" id="">
+                <input class="input-left" type="email" [placeholder]="'contact.email-placeholder' | translate" name="Your Email" id="">
             </div>
         </div>
         <div class="input-wrapper input-message-container">
-            <textarea name="Your Message" placeholder="Your Message" id=""></textarea>
+            <textarea name="Your Message" [placeholder]="'contact.message-placeholder' | translate" id=""></textarea>
         </div>
     </div>
     <div class="contact-me-send-section">
         <label class="contact-me-checkbox">
             <input type="checkbox" [formControl]="checkbox" />
             <span class="checkbox-image"></span>
-            <span>I've read the <a href="#">privacy policy</a> and agree to the procressing of my data as
-                outlined.</span>
+            <span>{{'contact.accept-before' | translate}} <a href="privacy-policy">{{'contact.accept-link' | translate}}</a> {{'contact.accept-after' | translate}}</span>
         </label>
         <div class="contact-me-send">
-            <button [disabled]="!checkbox.value">Send</button>
+            <button [disabled]="!checkbox.value">{{'contact.btn-send' | translate}}</button>
         </div>
     </div>
 </section>

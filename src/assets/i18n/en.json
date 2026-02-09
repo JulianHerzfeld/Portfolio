@@ -1,5 +1,4 @@
 {
-
     "navbar": {
         "why-me": "Why me",
         "skills": "Skills",
@@ -18,5 +17,33 @@
         "relocate": "open to \n relocate",
         "remote": "open to \n work remote",
         "talk-btn": "Let's talk"
+    },
+    "my-skills": {
+        "title": "My Skills"
+    },
+    "projects": {
+        "title": "My Projects",
+        "join": {
+            "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+        },
+        "sharkie": {
+            "description": "2D action game based on an object-oriented approach. Control Sharkie underwater and defeat enemies by shooting bubbles."
+        }
+    },
+    "contact": {
+        "title": "Contact me",
+        "description": "I look forward to hearing from you. I am seeking a position as a frontend or web developer and am motivated to contribute to new projects and apply my skills.",
+        "name-placeholder": "Your Name",
+        "email-placeholder": "Your Email",
+        "message-placeholder": "Your Message",
+        "accept-before": "I've read the",
+        "accept-link": "privacy policy",
+        "accept-after": "and agree to the processing of my data as outlined.",
+        "btn-send": "Send"
+    },
+    "footer": {
+        "logo": "frontend developer",
+        "imprint": "Legal notice",
+        "privacy": "privacy policy"
     }
 }

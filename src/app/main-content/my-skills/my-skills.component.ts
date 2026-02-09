@@ -1,12 +1,13 @@
 import { NgForOf } from '@angular/common';
 import { Component } from '@angular/core';
 import { ScrollService } from '../../../models/scroll-service';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-my-skills',
   standalone: true,
-  imports: [NgForOf],
+  imports: [NgForOf, TranslateModule],
   templateUrl: './my-skills.component.html',
   styleUrl: './my-skills.component.scss'
 })

@@ -17,5 +17,33 @@
         "relocate": " bin bereit \n zum Umzug",
         "remote": "bin bereit für \n Remote-Arbeit",
         "talk-btn": "Lass uns reden"
+    },
+    "my-skills": {
+        "title": "Meine Fähigkeiten"
+    },
+    "projects": {
+        "title": "Meine Projekte",
+        "join": {
+            "description": "Vom Kanban-System inspirierter Aufgabenmanager. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
+        },
+        "sharkie": {
+            "description": "2D-Action-Spiel auf objektorientierter Basis. Steuere Sharkie durch die Unterwasserwelt und besiege Gegner mit Blubberblasen."
+        }
+    },
+    "contact": {
+        "title": "Kontaktiere mich",
+        "description": "Ich freue mich über Ihre Kontaktaufnahme. Ich suche eine Position als Frontend- oder Webentwickler und bin motiviert, an neuen Projekten mitzuwirken und mein Wissen einzubringen.",
+        "name-placeholder": "Ihr Name",
+        "email-placeholder": "Ihre Email",
+        "message-placeholder": "Ihre Nachricht",
+        "accept-before": "Ich habe die",
+        "accept-link": "Datenschutzerklärung",
+        "accept-after": "gelesen und stimme der Verarbeitung meiner Daten zu.",
+        "btn-send": "Senden"
+    },
+    "footer": {
+        "logo": "frontend entwickler",
+        "imprint": "Impressum",
+        "privacy": "Datenschutzerklärung"
     }
 }
