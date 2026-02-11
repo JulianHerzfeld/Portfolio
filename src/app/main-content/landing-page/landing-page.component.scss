@@ -1,31 +1,62 @@
+@use 'styles/breakpoints' as *;
+
 .main-content {
     position: relative;
     height: 660px;
-    // background-color: #0B042D;
-    // background: linear-gradient(to bottom left, #0B042D, #1F0B7F);
     display: flex;
     justify-content: space-between;
     padding-left: 105px;
     padding-right: 52px;
+
+    @include respond(lg) {
+        padding-left: 40px;
+    }
 
     >div {
         >div {
             >h1 {
                 font-size: 82px;
                 color: #02F4BF;
+
+                @include respond(xl) {
+                    font-size: 62px;
+                }
             }
 
             >h2 {
                 font-size: 54px;
                 color: #02F4BF;
+
+                @include respond(xl) {
+                    font-size: 34px;
+                }
             }
         }
+    }
+}
+
+.content-right {
+    height: 539px;
+
+    @include respond(xl) {
+        display: flex;
+        align-items: center;
     }
 }
 
 .portrait {
     width: 539px;
     height: 554px;
+
+    @include respond(xl) {
+        width: 440px;
+        height: 455px;
+    }
+
+    @include respond(md) {
+        width: 340px;
+        height: 355px;
+    }
 }
 
 .contact-me {

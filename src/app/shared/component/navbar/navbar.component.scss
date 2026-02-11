@@ -1,3 +1,5 @@
+@use 'styles/breakpoints' as *;
+
 .main-content-navbar {
     position: sticky;
     top: 0;
@@ -26,7 +28,12 @@ a {
     padding-left: 140px;
     padding-right: 140px;
     height: 92px;
+
     // background-color: #0B042D;
+    @include respond(lg) {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
 
     >div {
         display: flex;

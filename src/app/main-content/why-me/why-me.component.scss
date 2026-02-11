@@ -1,3 +1,5 @@
+@use 'styles/breakpoints' as *;
+
 .main-content {
     display: flex;
     justify-content: space-between;
@@ -7,13 +9,32 @@
     color: white;
     gap: 70px;
     margin-bottom: 104px;
+
     // height: 556px;
+    @include respond(lg) {
+        padding-left: 40px;
+        gap: 30px;
+    }
 
 
     >div {
         >img {
             width: 490px;
             height: 452px;
+
+            @include respond(xl) {
+                width: 450px;
+                height: 412px;
+            }
+
+            @include respond(lg) {
+                width: 350px;
+                height: 340px;
+            }
+
+            @include respond(md) {
+                display: none;
+            }
         }
     }
 }
@@ -31,6 +52,7 @@
     >h1 {
         color: #E15544;
         font-size: 54px;
+        margin-bottom: 29px;
     }
 
     >p {
@@ -79,6 +101,10 @@
     gap: 64px;
     padding-left: 100px;
 
+    @include respond(xl) {
+        padding-left: unset;
+    }
+
     >h2 {
         color: #E15544;
         font-size: 48px;
@@ -101,6 +127,10 @@
     justify-content: end;
     gap: 208px;
     padding-right: 55px;
+
+    @include respond(xl) {
+        padding-left: 150px;
+    }
 
     >div {
         display: flex;
