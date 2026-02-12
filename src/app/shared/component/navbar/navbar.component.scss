@@ -30,14 +30,26 @@ a {
     height: 92px;
 
     // background-color: #0B042D;
+    >div {
+        display: flex;
+    }
+
+    .language {
+        @include respond(md) {
+            display: none;
+        }
+    }
+
     @include respond(lg) {
         padding-left: 80px;
         padding-right: 80px;
     }
 
-    >div {
-        display: flex;
+    @include respond(sm) {
+        padding-left: 25px;
+        padding-right: 25px;
     }
+
 }
 
 .navigation {
@@ -52,6 +64,10 @@ a {
         &:hover {
             cursor: pointer;
         }
+
+        @include respond(sm) {
+            font-size: 40px;
+        }
     }
 
     >div {
@@ -65,6 +81,12 @@ a {
             &:hover {
                 color: #02F4BF;
             }
+        }
+    }
+
+    .navbar-links {
+        @include respond(md) {
+            display: none;
         }
     }
 }
@@ -91,4 +113,26 @@ a {
     >p {
         color: #E15544;
     }
+}
+
+.open-mobile-menu {
+    display: none;
+    border: none;
+    background-color: transparent;
+
+    @include respond(md) {
+        display: flex;
+    }
+
+    &:hover img {
+        cursor: pointer;
+        content: url('/assets/img/icons/burger-menu-hover.svg');
+    }
+
+    >img {
+        @include respond(sm) {
+            width: 25px;
+        }
+    }
+
 }

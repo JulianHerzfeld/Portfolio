@@ -2,7 +2,7 @@
     <div class="navbar">
         <div class="navigation">
             <p (click)="goTop()" class="logo" href="">&lt;JH&gt;</p>
-            <div>
+            <div class="navbar-links">
                 <a href="#why-me">{{'navbar.why-me' | translate}}</a>
                 <a href="#my-skills">{{'navbar.skills' | translate}}</a>
                 <a href="#my-projects">{{'navbar.projects' | translate}}</a>
@@ -14,6 +14,10 @@
             <p>|</p>
             <a (click)="switchLang('en')">EN</a>
         </div>
+        <button class="open-mobile-menu" (click)="open = true">
+            <img src="assets/img/icons/burger-menu.svg" alt="">
+        </button>
     </div>
 
+    <app-mobile-navbar *ngIf="open" (close)="open = false"></app-mobile-navbar>
 </section>

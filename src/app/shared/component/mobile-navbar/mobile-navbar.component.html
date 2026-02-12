@@ -1,0 +1,21 @@
+<div class="overlay-wrapper" (click)="close.emit()">
+    <section class="mobile-menu" (click)="$event.stopPropagation()">
+        <div class="back-btn">
+            <button (click)="close.emit()">
+                <img src="assets/img/icons/close-nav-overlay.svg" alt="">
+            </button>
+        </div>
+
+        <nav>
+            <a href="#why-me" (click)="close.emit()">{{'navbar.why-me' | translate}}</a>
+            <a href="#my-skills" (click)="close.emit()">{{'navbar.skills' | translate}}</a>
+            <a href="#my-projects" (click)="close.emit()">{{'navbar.projects' | translate}}</a>
+            <a href="#contact-me" (click)="close.emit()">{{'navbar.contact' | translate}}</a>
+            <div class="language">
+                <a (click)="switchLang('de')">DE</a>
+                <p>|</p>
+                <a (click)="switchLang('en')">EN</a>
+            </div>
+        </nav>
+    </section>
+</div>
