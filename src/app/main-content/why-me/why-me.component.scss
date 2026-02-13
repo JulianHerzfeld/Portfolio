@@ -10,10 +10,16 @@
     gap: 70px;
     margin-bottom: 104px;
 
-    // height: 556px;
     @include respond(lg) {
         padding-left: 40px;
+        padding-right: 60px;
         gap: 30px;
+    }
+
+    @include respond(sm) {
+        display: unset;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
 
@@ -43,6 +49,12 @@
     display: flex;
     flex-direction: column;
     max-width: 670px;
+
+    @include respond(sm) {
+        max-width: unset;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .why-me-description {
@@ -53,11 +65,19 @@
         color: #E15544;
         font-size: 54px;
         margin-bottom: 29px;
+
+        @include respond(sm) {
+            font-size: 32px;
+        }
     }
 
     >p {
         color: #02F4BF;
         font-size: 16px;
+    }
+
+    @include respond(sm) {
+        text-align: center;
     }
 }
 
@@ -70,6 +90,7 @@
 
     .vector {
         opacity: 1;
+
     }
 
     .vector-hover {
@@ -79,13 +100,15 @@
         left: 0;
     }
 
-    &:hover {
-        .vector {
-            opacity: 0;
-        }
+    @include respond-mobile {
+        &:hover {
+            .vector {
+                opacity: 0;
+            }
 
-        .vector-hover {
-            opacity: 1;
+            .vector-hover {
+                opacity: 1;
+            }
         }
     }
 }
@@ -94,6 +117,10 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    @include respond(sm) {
+        gap: 16px;
+    }
 }
 
 .i-am-located {
@@ -101,13 +128,13 @@
     gap: 64px;
     padding-left: 100px;
 
-    @include respond(xl) {
-        padding-left: unset;
-    }
-
     >h2 {
         color: #E15544;
         font-size: 48px;
+
+        @include respond(sm) {
+            font-size: 18px;
+        }
     }
 
     >div {
@@ -119,6 +146,21 @@
             color: #02F4BF;
             font-size: 18px;
         }
+
+        @include respond(sm) {
+            gap: 8px;
+        }
+    }
+
+    @include respond(xl) {
+        padding-left: unset;
+    }
+
+    @include respond(sm) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
     }
 }
 
@@ -128,8 +170,10 @@
     gap: 208px;
     padding-right: 55px;
 
-    @include respond(xl) {
-        padding-left: 150px;
+    >img {
+        @include respond(sm) {
+            display: none;
+        }
     }
 
     >div {
@@ -141,6 +185,16 @@
             color: #02F4BF;
             font-size: 18px;
         }
+    }
+
+    @include respond(xl) {
+        padding-left: 150px;
+    }
+
+    @include respond(sm) {
+        justify-content: center;
+        padding-left: unset;
+        padding-right: unset;
     }
 }
 
@@ -158,13 +212,15 @@
         left: 0;
     }
 
-    &:hover {
-        .suitcase {
-            opacity: 0;
-        }
+    @include respond-mobile {
+        &:hover {
+            .suitcase {
+                opacity: 0;
+            }
 
-        .suitcase-hover {
-            opacity: 1;
+            .suitcase-hover {
+                opacity: 1;
+            }
         }
     }
 }
@@ -188,6 +244,10 @@
             font-size: 18px;
         }
     }
+
+    @include respond(sm) {
+        justify-content: center;
+    }
 }
 
 .remote-hover {
@@ -204,13 +264,15 @@
         transition: opacity 0.8s ease;
     }
 
-    &:hover {
-        .remote-icon {
-            opacity: 0;
-        }
+    @include respond-mobile {
+        &:hover {
+            .remote-icon {
+                opacity: 0;
+            }
 
-        .remote-hover {
-            opacity: 1;
+            .remote-hover {
+                opacity: 1;
+            }
         }
     }
 }
@@ -233,8 +295,57 @@
             color: #E15544;
         }
     }
+
+    @include respond(sm) {
+        justify-content: center;
+        margin-top: 8px;
+        margin-bottom: 40px;
+    }
 }
 
 .multiline {
     white-space: pre-line;
+
+    @include respond(sm) {
+        white-space: unset;
+    }
+}
+
+.mobile-arrow-left {
+    display: none;
+
+    @include respond(sm) {
+        display: flex;
+        margin-bottom: 8px;
+    }
+}
+
+.mobile-arrow-right {
+    display: none;
+
+    @include respond(sm) {
+        display: flex;
+        justify-content: end;
+        margin-top: 8px;
+    }
+}
+
+.vector,
+.suitcase {
+    @include respond(sm) {
+        width: 26px;
+    }
+}
+
+p {
+    @include respond(sm) {
+        font-size: 16px !important;
+    }
+}
+
+.remote-arrow-up,
+.remote-arrow-down {
+    @include respond(sm) {
+        display: none;
+    }
 }

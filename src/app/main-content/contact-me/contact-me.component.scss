@@ -1,13 +1,24 @@
+@use 'styles/breakpoints' as *;
+
 .contact-me-content {
     padding-left: 105px;
     padding-right: 111px;
     margin-bottom: 88px;
+
+    @include respond(lg) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 a {
     text-decoration: none;
     color: #02F4BF;
     font-size: 20px;
+
+    @include respond(md) {
+        font-size: 16px;
+    }
 }
 
 .contact-me-headline {
@@ -48,6 +59,10 @@ a {
 .contact-me-infos {
     display: flex;
     gap: 150px;
+
+    @include respond(lg) {
+        gap: 70px;
+    }
 }
 
 .description {
@@ -56,6 +71,10 @@ a {
     >p {
         font-size: 18px;
         color: #02F4BF;
+
+        @include respond(md) {
+            font-size: 16px;
+        }
     }
 }
 
@@ -105,10 +124,21 @@ a {
     }
 }
 
+.contact-me-arrow {
+    display: flex;
+    justify-content: flex-end;
+    width: 50px;
+    padding-left: 70px;
+}
+
 .contact-me-input-wrapper {
     display: flex;
     gap: 150px;
     margin-bottom: 32px;
+
+    @include respond(lg) {
+        gap: 70px;
+    }
 }
 
 .contact-me-input-left {

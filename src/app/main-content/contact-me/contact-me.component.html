@@ -7,11 +7,8 @@
         <div class="contact-me-infos">
             <div class="description">
                 <p>{{'contact.description' | translate}}</p>
-
-                <!-- Ich freue mich über Ihre Kontaktaufnahme. Ich suche eine Position als Frontend- oder Webentwickler und
-                bin motiviert, an neuen Projekten mitzuwirken und mein Wissen einzubringen. -->
             </div>
-            <div class="">
+            <div>
                 <div (click)="mailNow()" class="contact-me-email">
                     <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="email-icon"
@@ -32,18 +29,23 @@
             </div>
         </div>
 
-        <button type="button" class="scroll-top" (click)="goTop()" aria-label="Scroll to top">
-            <img src="assets/img/icons/arrow-up.svg" alt="" />
-        </button>
+        <div class="contact-me-arrow">
+            <button type="button" class="scroll-top" (click)="goTop()" aria-label="Scroll to top">
+                <img src="assets/img/icons/arrow-up.svg" alt="" />
+            </button>
+        </div>
+
 
     </div>
     <div class="contact-me-input-wrapper">
         <div class="contact-me-input-left">
             <div class="input-wrapper">
-                <input class="input-left" type="text" [placeholder]="'contact.name-placeholder' | translate" name="Your Name" id="">
+                <input class="input-left" type="text" [placeholder]="'contact.name-placeholder' | translate"
+                    name="Your Name" id="">
             </div>
             <div class="input-wrapper">
-                <input class="input-left" type="email" [placeholder]="'contact.email-placeholder' | translate" name="Your Email" id="">
+                <input class="input-left" type="email" [placeholder]="'contact.email-placeholder' | translate"
+                    name="Your Email" id="">
             </div>
         </div>
         <div class="input-wrapper input-message-container">
@@ -54,7 +56,8 @@
         <label class="contact-me-checkbox">
             <input type="checkbox" [formControl]="checkbox" />
             <span class="checkbox-image"></span>
-            <span>{{'contact.accept-before' | translate}} <a href="privacy-policy">{{'contact.accept-link' | translate}}</a> {{'contact.accept-after' | translate}}</span>
+            <span>{{'contact.accept-before' | translate}} <a href="privacy-policy">{{'contact.accept-link' |
+                    translate}}</a> {{'contact.accept-after' | translate}}</span>
         </label>
         <div class="contact-me-send">
             <button [disabled]="!checkbox.value">{{'contact.btn-send' | translate}}</button>

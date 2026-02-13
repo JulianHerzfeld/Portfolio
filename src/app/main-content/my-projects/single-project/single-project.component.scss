@@ -9,18 +9,37 @@
     padding-right: 111px;
 
     >div {
+
         >img {
             filter: brightness(85%);
+
+            @include respond(md) {
+                width: 398px;
+            }
 
             &:hover {
                 filter: brightness(100%);
             }
         }
     }
+
+    @include respond(xl) {
+        gap: 60px;
+    }
+
+    @include respond(lg) {
+        gap: 48px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 .single-project-content.reverse {
     flex-direction: row-reverse;
+}
+
+.single-project-img {
+    display: flex;
 }
 
 .single-project-infos {
@@ -32,6 +51,10 @@
         font-size: 48px;
         color: #02F4BF;
         margin-bottom: 17px;
+
+        @include respond(md) {
+            font-size: 40px;
+        }
     }
 
     >div {
@@ -68,6 +91,10 @@
 
 .single-project-skills {
     margin-bottom: 40px;
+
+    @include respond(md) {
+        margin-bottom: 20px;
+    }
 }
 
 .single-project-btns {
@@ -89,6 +116,10 @@
         &:hover {
             color: #E15544;
         }
+    }
+
+    @include respond(md) {
+        margin-top: 20px;
     }
 }
 

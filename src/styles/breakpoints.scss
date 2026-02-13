@@ -1,12 +1,21 @@
 $breakpoints: (
+    mobile: 475px,
     sm: 850px,
     md: 1050px,
     lg: 1250px,
     xl: 1500px
 );
 
+$mobile-width: 851px;
+
 @mixin respond($size) {
     @media (max-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+}
+
+@mixin respond-mobile {
+    @media (min-width: $mobile-width) {
         @content;
     }
 }

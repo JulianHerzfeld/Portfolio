@@ -1,6 +1,13 @@
+@use 'styles/breakpoints' as *;
+
 .footer {
     padding-left: 105px;
     padding-right: 111px;
+
+    @include respond(lg) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 .footer-top {
@@ -23,6 +30,10 @@
     font-size: 54px;
     font-family: 'handjet';
     font-weight: bold;
+
+    @include respond(md) {
+        font-size: 45px;
+    }
 }
 
 .copyright {
@@ -31,6 +42,10 @@
 
     >p {
         font-size: 23px;
+
+        @include respond(md) {
+            font-size: 20px;
+        }
     }
 }
 
