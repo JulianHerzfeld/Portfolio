@@ -18,12 +18,27 @@
     >div {
         color: #E15544;
     }
+
+    @include respond(sm) {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 45px;
+    }
 }
 
 .logo-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    order: 1;
+
+    @include respond(sm) {
+        order: 2;
+
+        .logo-text {
+            display: none;
+        }
+    }
 }
 
 .logo {
@@ -32,13 +47,14 @@
     font-weight: bold;
 
     @include respond(md) {
-        font-size: 45px;
+        font-size: 48px;
     }
 }
 
 .copyright {
     display: flex;
     align-items: flex-end;
+    order: 2;
 
     >p {
         font-size: 23px;
@@ -47,12 +63,21 @@
             font-size: 20px;
         }
     }
+
+    @include respond(sm) {
+        order: 3;
+
+        p {
+            font-size: 16px;
+        }
+    }
 }
 
 .footer-buttons {
     display: flex;
     align-items: flex-end;
     gap: 33px;
+    order: 3;
 
     >a {
         text-decoration: none;
@@ -70,6 +95,11 @@
                 fill: #02F4BF;
             }
         }
+    }
+
+    @include respond(sm) {
+        order: 1;
+        margin-bottom: 105px;
     }
 }
 
@@ -90,5 +120,13 @@
             cursor: pointer;
             color: #02F4BF;
         }
+    }
+
+    @include respond(sm) {
+        padding-left: unset;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 32px;
     }
 }

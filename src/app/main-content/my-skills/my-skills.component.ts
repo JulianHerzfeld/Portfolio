@@ -27,6 +27,18 @@ export class MySkillsComponent {
     'assets/img/icons/material-design.svg'
   ];
 
+  skillImgsMobile: string[] = [
+    'assets/img/icons/angular-mobile.svg',
+    'assets/img/icons/typescript-mobile.svg',
+    'assets/img/icons/javascript-mobile.svg',
+    'assets/img/icons/html.mobile.svg',
+    'assets/img/icons/css.mobile.svg',
+    'assets/img/icons/api-mobile.svg',
+    'assets/img/icons/firebase-mobile.svg',
+    'assets/img/icons/git-mobile.svg',
+    'assets/img/icons/material-design-mobile.svg'
+  ]
+
 
   goToContact() {
     this.scrollService.scrollToId('contact-me');

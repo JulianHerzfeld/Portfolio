@@ -2,8 +2,19 @@
     <h1>{{'my-skills.title' | translate}}</h1>
     
     <div class="all-skills">
-        <img *ngFor="let skill of skillImgs; let i = index;" src="{{skill}}" alt="">
-        <img class="challenge-me" (click)="goToContact()" src="assets/img/icons/challenge.svg" alt="">
+        <img class="skill-imgs-desktop" *ngFor="let skill of skillImgs; let i = index;" src="{{skill}}" alt="">
+        <img class="skill-imgs-mobile" *ngFor="let skill of skillImgsMobile; let i = index;" src="{{skill}}" alt="">
+        <div class="challenge-me-wrapper">
+            <img class="challenge-me" (click)="goToContact()" src="assets/img/icons/challenge.svg" alt="">
+            <p>Challenge <br> me</p>
+        </div>
+    </div>
+    <div class="my-skills-content-mobile">
+        <div>
+            <img src="assets/img/icons/my-skills-mobile-arrow.svg" alt="">
+        </div>
+        <p>{{'my-skills.description' | translate}}</p>
+        <button (click)="goToContact()">{{'my-skills.talk-btn' | translate}}</button>
     </div>
     
 </section>

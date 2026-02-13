@@ -19,7 +19,9 @@
         "talk-btn": "Lass uns reden"
     },
     "my-skills": {
-        "title": "Meine Fähigkeiten"
+        "title": "Meine Fähigkeiten",
+        "description": "Ich freue mich immer, neue Technologien zu erlernen. Sagen Sie mir einfach, was Sie brauchen.",
+        "talk-btn": "Lass uns reden"
     },
     "projects": {
         "title": "Meine Projekte",

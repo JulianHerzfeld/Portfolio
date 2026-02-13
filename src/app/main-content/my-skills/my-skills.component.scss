@@ -2,7 +2,7 @@
 
 .my-skills-content {
     padding-left: 105px;
-    padding-right: 30px;
+    padding-right: 40px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -16,16 +16,103 @@
         color: #E15544;
         font-size: 54px;
     }
+
+    @include respond(sm) {
+        gap: 24px;
+        margin-bottom: 71px;
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+        }
+
+    }
 }
 
 .all-skills {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 120px;
+    column-gap: 120px;
+    row-gap: 100px;
+
+    @include respond(sm) {
+        column-gap: 80px;
+        row-gap: 40px;
+        justify-content: center;
+    }
 }
 
-.challenge-me:hover {
-    cursor: pointer;
-    filter: brightness(1.5);
+.skill-imgs-desktop {
+    @include respond(sm) {
+        display: none;
+    }
+}
+
+.skill-imgs-mobile {
+    display: none;
+
+    @include respond(sm) {
+        display: block;
+    }
+}
+
+.challenge-me-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    >p {
+        font-size: 16px;
+        color: #02F4BF;
+        display: none;
+    }
+
+    @include respond(sm) {
+        p {
+            display: block;
+        }
+    }
+}
+
+.challenge-me {
+    &:hover {
+        cursor: pointer;
+        filter: brightness(1.5);
+    }
+
+    @include respond(sm) {
+        content: url('/assets/img/icons/challenge-me-mobile.svg');
+    }
+}
+
+.my-skills-content-mobile {
+    display: none;
+
+    @include respond(sm) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+
+        >p {
+            font-size: 16px;
+            color: #02F4BF;
+            text-align: center;
+        }
+
+        >button {
+            width: 137px;
+            height: 43px;
+            font-size: 16px;
+            background-color: #02F4BF;
+            border: none;
+            font-weight: 400;
+
+            &:hover {
+                cursor: pointer;
+                color: #E15544;
+            }
+        }
+    }
 }

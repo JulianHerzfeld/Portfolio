@@ -19,7 +19,9 @@
         "talk-btn": "Let's talk"
     },
     "my-skills": {
-        "title": "My Skills"
+        "title": "My Skills",
+        "description": "I am always happy to learn new technologies, just tell me what you need.",
+        "talk-btn": "Let's talk"
     },
     "projects": {
         "title": "My Projects",

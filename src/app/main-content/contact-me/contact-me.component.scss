@@ -9,6 +9,12 @@
         padding-left: 40px;
         padding-right: 40px;
     }
+
+    @include respond(sm) {
+        padding-left: 26px;
+        padding-right: 26px;
+        margin-bottom: 56px;
+    }
 }
 
 a {
@@ -17,7 +23,7 @@ a {
     font-size: 20px;
 
     @include respond(md) {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -35,6 +41,19 @@ a {
         position: relative;
         top: 15px;
     }
+
+    @include respond(sm) {
+        justify-content: center;
+        margin-bottom: 16px;
+
+        h1 {
+            font-size: 32px;
+        }
+
+        img {
+            display: none;
+        }
+    }
 }
 
 .contact-me-infos-wrapper {
@@ -43,16 +62,21 @@ a {
     align-items: center;
     margin-bottom: 24px;
 
-    .scroll-top {
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
+    @include respond(sm) {
+        justify-content: center;
+        text-align: center;
+    }
+}
 
-        &:hover img {
-            position: relative;
-            left: 8px;
-            content: url('/assets/img/icons/arrow-up-hover.svg');
-        }
+.scroll-top {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    &:hover img {
+        position: relative;
+        left: 8px;
+        content: url('/assets/img/icons/arrow-up-hover.svg');
     }
 }
 
@@ -75,6 +99,12 @@ a {
         @include respond(md) {
             font-size: 16px;
         }
+    }
+}
+
+.contact-me-directly {
+    @include respond(sm) {
+        display: none;
     }
 }
 
@@ -102,6 +132,12 @@ a {
         }
     }
 
+    @include respond(sm) {
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
 }
 
 .contact-me-phone {
@@ -122,6 +158,11 @@ a {
             fill: #02F4BF;
         }
     }
+
+    @include respond(sm) {
+        flex-direction: column;
+        gap: 8px;
+    }
 }
 
 .contact-me-arrow {
@@ -129,6 +170,10 @@ a {
     justify-content: flex-end;
     width: 50px;
     padding-left: 70px;
+
+    @include respond(sm) {
+        display: none;
+    }
 }
 
 .contact-me-input-wrapper {
@@ -139,6 +184,12 @@ a {
     @include respond(lg) {
         gap: 70px;
     }
+
+    @include respond(sm) {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
 }
 
 .contact-me-input-left {
@@ -147,6 +198,10 @@ a {
     gap: 32px;
     max-width: 507px;
     width: 100%;
+
+    @include respond(sm) {
+        gap: 16px;
+    }
 }
 
 .input-wrapper input,
@@ -184,21 +239,32 @@ a {
 .input-message-container {
     max-width: 637px;
     width: 100%;
+
+    @include respond(sm) {
+        max-width: 507px;
+    }
 }
 
 .contact-me-send-section {
     display: flex;
     justify-content: space-between;
     height: 74px;
+    gap: 24px;
+
+    @include respond(sm) {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        height: 100%;
+    }
 }
 
 .contact-me-checkbox {
     display: flex;
     align-items: flex-start;
-    gap: 5px;
+    gap: 8px;
     cursor: pointer;
     user-select: none;
-    height: 24px;
 
     input {
         position: absolute;
@@ -207,8 +273,9 @@ a {
     }
 
     .checkbox-image {
-        width: 24px;
+        max-width: 24px;
         height: 24px;
+        flex-shrink: 0;
         background-size: contain;
         background-repeat: no-repeat;
         background-image: url('/assets/img/icons/unchecked-box.svg');
@@ -233,6 +300,8 @@ a {
     }
 
     >span {
+        flex: 1;
+        min-width: 0;
         font-size: 16px;
         color: #02F4BF;
 
@@ -245,6 +314,11 @@ a {
                 filter: brightness(100%);
             }
         }
+    }
+
+    @include respond(sm) {
+        height: unset;
+        max-width: 507px;
     }
 }
 
@@ -276,5 +350,26 @@ a {
     >button:disabled {
         border: 1px solid #827B7B;
         color: #827B7B;
+    }
+}
+
+.contact-me-arrow-mobile {
+    display: none;
+
+    @include respond(sm) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 60px;
+    }
+}
+
+.contact-me-directly-mobile {
+    display: none;
+
+    @include respond(sm) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
