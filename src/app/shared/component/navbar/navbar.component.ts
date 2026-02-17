@@ -17,13 +17,18 @@ export class NavbarComponent {
 
 
   constructor(private scrollService: ScrollService, private translate: TranslateService) {
-    this.translate.use('en');
+    const savedLang = localStorage.getItem('app-lang') as 'de' | 'en' | null;
+    const defaultLang: 'de' | 'en' = savedLang ?? 'en';
+
+    this.translate.setFallbackLang('en');
+    this.translate.use(defaultLang);
   }
 
 
   switchLang(lang: 'de' | 'en') {
     this.translate.use(lang);
-    console.log("hier passiert was");
+    localStorage.setItem('app-lang', lang);
+    console.log("Sprache gewechselt:", lang);
   }
 
 

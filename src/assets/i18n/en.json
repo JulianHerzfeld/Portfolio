@@ -41,7 +41,12 @@
         "accept-before": "I've read the",
         "accept-link": "privacy policy",
         "accept-after": "and agree to the processing of my data as outlined.",
-        "btn-send": "Send"
+        "btn-send": "Send",
+        "input-name-error": "Please enter a Name",
+        "input-email-error": "Please enter a Email",
+        "input-message-error": "Please enter a Message",
+        "success-message": "Message sent successfully!",
+        "error-message": "Something went wrong. Please try again."
     },
     "footer": {
         "logo": "frontend developer",

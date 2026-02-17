@@ -1,3 +1,5 @@
+@use 'styles/breakpoints' as *;
+
 :host ::ng-deep .privacy-policy-content {
     padding-left: 105px;
     padding-right: 111px;
@@ -34,6 +36,34 @@
 
         &:hover {
             filter: brightness(1.5);
+        }
+    }
+
+    @include respond(sm) {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        h1 {
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 23px;
+        }
+
+        h3,
+        h4 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 16px;
+            overflow-wrap: break-word;
+        }
+
+        a {
+            overflow-wrap: break-word;
+            word-break: break-word;
         }
     }
 }

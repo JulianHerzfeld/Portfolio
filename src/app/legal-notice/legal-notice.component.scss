@@ -1,3 +1,5 @@
+@use 'styles/breakpoints' as *;
+
 :host ::ng-deep .legal-notice-content {
     padding-left: 105px;
     padding-right: 111px;
@@ -22,6 +24,33 @@
         font-size: 18px;
         font-weight: 400;
         margin-top: 15px;
+
+        a {
+            &:hover {
+                filter: brightness(1.5);
+            }
+
+            >span {
+                color: #E15544;
+            }
+        }
+    }
+
+    @include respond(sm) {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        h1 {
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 23px;
+        }
+
+        p {
+            font-size: 16px;
+        }
     }
 }
 

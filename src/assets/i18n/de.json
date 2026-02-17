@@ -41,7 +41,12 @@
         "accept-before": "Ich habe die",
         "accept-link": "Datenschutzerklärung",
         "accept-after": "gelesen und stimme der Verarbeitung meiner Daten zu.",
-        "btn-send": "Senden"
+        "btn-send": "Senden",
+        "input-name-error": "Bitte gib einen Namen ein",
+        "input-email-error": "Bitte gib eine Email ein",
+        "input-message-error": "Bitte gib eine Nachricht ein",
+        "success-message": "Nachricht erfolgreich gesendet!",
+        "error-message": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
     },
     "footer": {
         "logo": "frontend entwickler",

@@ -130,3 +130,11 @@
         margin-bottom: 32px;
     }
 }
+
+@include respond(sm) {
+    .footer.special {
+        .footer-buttons {
+            display: none;
+        }
+    }
+}

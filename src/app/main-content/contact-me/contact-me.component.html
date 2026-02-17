@@ -37,32 +37,47 @@
 
 
     </div>
-    <div class="contact-me-input-wrapper">
-        <div class="contact-me-input-left">
-            <div class="input-wrapper">
-                <input class="input-left" type="text" [placeholder]="'contact.name-placeholder' | translate"
-                    name="Your Name" id="">
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <div class="contact-me-input-wrapper">
+            <div class="contact-me-input-left">
+                <div class="input-wrapper input-name">
+                    <input #name="ngModel" [(ngModel)]="contactData.name" class="input-left" type="text"
+                        [placeholder]="'contact.name-placeholder' | translate" name="Your Name" id="name" required>
+                    @if (!name.valid && contactForm.submitted) {
+                    <span class="error-message">{{'contact.input-name-error' | translate}}</span>
+                    }
+                </div>
+                <div class="input-wrapper input-email">
+                    <input #email="ngModel" [(ngModel)]="contactData.email" class="input-left" type="email"
+                        [placeholder]="'contact.email-placeholder' | translate" name="Your Email" id="email" required
+                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                    @if (!email.valid && contactForm.submitted) {
+                    <span class="error-message">{{'contact.input-email-error' | translate}}</span>
+                    }
+                </div>
             </div>
-            <div class="input-wrapper">
-                <input class="input-left" type="email" [placeholder]="'contact.email-placeholder' | translate"
-                    name="Your Email" id="">
+            <div class="input-wrapper input-message-container">
+                <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="Your Message"
+                    [placeholder]="'contact.message-placeholder' | translate" id="message" required></textarea>
+                @if (!message.valid && contactForm.submitted) {
+                <span class="error-message">{{'contact.input-message-error' | translate}}</span>
+                }
             </div>
         </div>
-        <div class="input-wrapper input-message-container">
-            <textarea name="Your Message" [placeholder]="'contact.message-placeholder' | translate" id=""></textarea>
+        <div class="contact-me-send-section">
+            <label class="contact-me-checkbox">
+                <input type="checkbox" [formControl]="checkbox" />
+                <span class="checkbox-image"></span>
+                <span>{{'contact.accept-before' | translate}} <a href="privacy-policy">{{'contact.accept-link' |
+                        translate}}</a> {{'contact.accept-after' | translate}}</span>
+            </label>
+            <div class="contact-me-send">
+                <button type="submit" value="submit" [disabled]="!checkbox.value">{{'contact.btn-send' |
+                    translate}}</button>
+            </div>
         </div>
-    </div>
-    <div class="contact-me-send-section">
-        <label class="contact-me-checkbox">
-            <input type="checkbox" [formControl]="checkbox" />
-            <span class="checkbox-image"></span>
-            <span>{{'contact.accept-before' | translate}} <a href="privacy-policy">{{'contact.accept-link' |
-                    translate}}</a> {{'contact.accept-after' | translate}}</span>
-        </label>
-        <div class="contact-me-send">
-            <button [disabled]="!checkbox.value">{{'contact.btn-send' | translate}}</button>
-        </div>
-    </div>
+    </form>
+
     <div class="contact-me-arrow-mobile">
         <button type="button" class="scroll-top" (click)="goTop()" aria-label="Scroll to top">
             <img src="assets/img/icons/arrow-up.svg" alt="" />
@@ -87,4 +102,17 @@
             <a>Tel: 015140468925</a>
         </div>
     </div>
+
+    @if (overlayStatus) {
+    <div class="overlay">
+        <div class="overlay-content">
+            @if (overlayStatus === 'success') {
+            <p>{{'contact.success-message' | translate}}</p>
+            }
+            @if (overlayStatus === 'error') {
+            <p>{{'contact.error-message' | translate}}</p>
+            }
+        </div>
+    </div>
+    }
 </section>
