@@ -25,7 +25,7 @@ export class ContactMeComponent {
   overlayStatus: 'success' | 'error' | null = null;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://julianherzfeld.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -59,7 +59,6 @@ export class ContactMeComponent {
             }, 2000);
           },
           complete: () => {
-            console.info('send post complete');
             setTimeout(() => {
               this.overlayStatus = null;
             }, 2000);

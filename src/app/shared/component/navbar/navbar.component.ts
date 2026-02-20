@@ -28,7 +28,6 @@ export class NavbarComponent {
   switchLang(lang: 'de' | 'en') {
     this.translate.use(lang);
     localStorage.setItem('app-lang', lang);
-    console.log("Sprache gewechselt:", lang);
   }
 
 

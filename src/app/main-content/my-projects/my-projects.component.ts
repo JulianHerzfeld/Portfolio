@@ -20,7 +20,7 @@ export class MyProjectsComponent {
       description: 'projects.join.description',
       imgUrlProjekt: 'assets/img/projects/join.svg',
       githubUrl: 'https://github.com/JulianHerzfeld/Join',
-      liveTestUrl: '#'
+      liveTestUrl: '/join/'
     },
     {
       title: 'Sharkie',
@@ -28,7 +28,7 @@ export class MyProjectsComponent {
       description: 'projects.sharkie.description',
       imgUrlProjekt: 'assets/img/projects/sharkie.svg',
       githubUrl: 'https://github.com/JulianHerzfeld/Sharkie-Project',
-      liveTestUrl: '#'
+      liveTestUrl: '/sharkie/'
     }
   ];
 }
