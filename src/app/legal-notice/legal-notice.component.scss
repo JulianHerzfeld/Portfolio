@@ -54,10 +54,21 @@
     }
 }
 
-a {
-    color: #E15544;
+:host ::ng-deep .legal-arrow-left-mobile {
+    display: none;
 
-    &:hover {
-        filter: brightness(1.5);
+    a {
+        color: #E15544;
+
+        &:hover {
+            filter: brightness(1.5);
+        }
+    }
+
+    @include respond(sm) {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 24px;
+        margin-bottom: 57px;
     }
 }

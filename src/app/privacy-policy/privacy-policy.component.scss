@@ -67,3 +67,14 @@
         }
     }
 }
+
+:host ::ng-deep .legal-arrow-left-mobile {
+    display: none;
+
+    @include respond(sm) {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 24px;
+        margin-bottom: 57px;
+    }
+}

@@ -13,12 +13,18 @@ export class MobileNavbarComponent {
 
 
   constructor(private translate: TranslateService) {
-    this.translate.use('en');
+    const savedLang = localStorage.getItem('app-lang');
+    if (savedLang) {
+      this.translate.use(savedLang);
+    } else {
+      this.translate.use('en');
+    }
   }
 
 
   switchLang(lang: 'de' | 'en') {
     this.translate.use(lang);
+    localStorage.setItem('app-lang', lang);
   }
 
 }

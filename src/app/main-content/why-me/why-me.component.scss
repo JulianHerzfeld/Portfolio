@@ -27,6 +27,7 @@
         >img {
             width: 490px;
             height: 452px;
+            filter: brightness(1.8);
 
             @include respond(xl) {
                 width: 450px;
