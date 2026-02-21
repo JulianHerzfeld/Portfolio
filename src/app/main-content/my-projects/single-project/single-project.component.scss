@@ -7,6 +7,7 @@
     margin-top: 64px;
     padding-left: 105px;
     padding-right: 111px;
+    overflow: hidden;
 
     >div {
 
@@ -227,4 +228,32 @@
 
 .single-project-btns-mobile {
     order: 3;
+}
+
+.single-project-img {
+    opacity: 0;
+    transform: translateX(-400px);
+    transition: transform 1000ms cubic-bezier(.25, .8, .25, 1),
+        opacity 1000ms cubic-bezier(.25, .8, .25, 1);
+}
+
+.single-project-infos,
+.single-project-btns,
+.single-project-btns-mobile {
+    opacity: 0;
+    transform: translateX(400px);
+    transition: transform 1000ms cubic-bezier(.25, .8, .25, 1),
+        opacity 1000ms cubic-bezier(.25, .8, .25, 1);
+}
+
+.animate .single-project-img {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animate .single-project-infos,
+.animate .single-project-btns,
+.animate .single-project-btns-mobile {
+    opacity: 1;
+    transform: translateX(0);
 }

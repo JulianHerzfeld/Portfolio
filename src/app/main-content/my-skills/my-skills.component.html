@@ -1,10 +1,10 @@
 <section class="my-skills-content content-limitation">
     <h1>{{'my-skills.title' | translate}}</h1>
     
-    <div class="all-skills">
-        <img class="skill-imgs-desktop" *ngFor="let skill of skillImgs; let i = index;" src="{{skill}}" alt="">
-        <img class="skill-imgs-mobile" *ngFor="let skill of skillImgsMobile; let i = index;" src="{{skill}}" alt="">
-        <div class="challenge-me-wrapper">
+    <div class="all-skills" appAnimateOnScroll>
+        <img class="skill-imgs-desktop" *ngFor="let skill of skillImgs; let i = index;" [style.transitionDelay.ms]="i * 100" src="{{skill}}" alt="">
+        <img class="skill-imgs-mobile" *ngFor="let skill of skillImgsMobile; let i = index;" [style.transitionDelay.ms]="i * 100" src="{{skill}}" alt="">
+        <div class="challenge-me-wrapper" [style.transitionDelay.ms]="getChallengeDelay()">
             <img class="challenge-me" (click)="goToContact()" src="assets/img/icons/challenge.svg" alt="">
             <p>Challenge <br> me</p>
         </div>

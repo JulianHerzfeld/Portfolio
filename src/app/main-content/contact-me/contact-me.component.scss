@@ -1,9 +1,24 @@
 @use 'styles/breakpoints' as *;
 
+.contact-me-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
 .contact-me-content {
     padding-left: 105px;
     padding-right: 111px;
     margin-bottom: 88px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition:
+        opacity 1500ms cubic-bezier(.25, .8, .25, 1),
+        transform 1500ms cubic-bezier(.25, .8, .25, 1);
+
+    &.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
     @include respond(lg) {
         padding-left: 40px;

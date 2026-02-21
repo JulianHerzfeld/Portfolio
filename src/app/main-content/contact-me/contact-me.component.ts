@@ -3,11 +3,12 @@ import { FormControl, FormsModule, NgForm, ReactiveFormsModule } from '@angular/
 import { ScrollService } from '../../../models/scroll-service';
 import { TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
+import { AnimateOnScrollDirective } from '../../shared/animate-on-scroll.directive';
 
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports: [ReactiveFormsModule, TranslateModule, FormsModule],
+  imports: [ReactiveFormsModule, TranslateModule, FormsModule, AnimateOnScrollDirective],
   templateUrl: './contact-me.component.html',
   styleUrl: './contact-me.component.scss'
 })

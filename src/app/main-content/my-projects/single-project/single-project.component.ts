@@ -1,11 +1,12 @@
 import { NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { AnimateOnScrollDirective } from '../../../shared/animate-on-scroll.directive';
 
 
 @Component({
   selector: 'app-single-project',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, AnimateOnScrollDirective],
   templateUrl: './single-project.component.html',
   styleUrl: './single-project.component.scss'
 })

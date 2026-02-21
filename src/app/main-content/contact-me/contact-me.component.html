@@ -1,118 +1,122 @@
-<section class="contact-me-content content-limitation">
-    <div class="contact-me-headline">
-        <h1>{{'contact.title' | translate}}</h1>
-        <img src="assets/img/icons/arrow-right-down.svg" alt="">
-    </div>
-    <div class="contact-me-infos-wrapper">
-        <div class="contact-me-infos">
-            <div class="description">
-                <p>{{'contact.description' | translate}}</p>
-            </div>
-            <div class="contact-me-directly">
-                <div (click)="mailNow()" class="contact-me-email">
-                    <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="email-icon"
-                            d="M23.665 5H4.73296C3.43138 5 2.37829 6.125 2.37829 7.5L2.36646 22.5C2.36646 23.875 3.43138 25 4.73296 25H23.665C24.9666 25 26.0315 23.875 26.0315 22.5V7.5C26.0315 6.125 24.9666 5 23.665 5ZM23.1917 10.3125L14.8261 15.8375C14.4475 16.0875 13.9505 16.0875 13.5719 15.8375L5.20626 10.3125C4.91045 10.1125 4.73296 9.775 4.73296 9.4125C4.73296 8.575 5.59673 8.075 6.27119 8.5125L14.199 13.75L22.1268 8.5125C22.8012 8.075 23.665 8.575 23.665 9.4125C23.665 9.775 23.4875 10.1125 23.1917 10.3125Z"
-                            fill="#E15544" />
-                    </svg>
-
-                    <a>E-mail: herzfeldjulian&#64;hotmail.de</a>
-                </div>
-                <div (click)="callNow()" class="contact-me-phone">
-                    <svg width="27" height="31" viewBox="0 0 27 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="phone-icon"
-                            d="M7.24086 13.909C8.8159 17.557 11.3535 20.5348 14.4489 22.4039L16.8552 19.568C17.1505 19.2199 17.588 19.1039 17.9708 19.2586C19.1959 19.7355 20.5194 19.9934 21.8756 19.9934C22.4772 19.9934 22.9694 20.5734 22.9694 21.2824V25.7812C22.9694 26.4902 22.4772 27.0703 21.8756 27.0703C11.605 27.0703 3.28137 17.2605 3.28137 5.15625C3.28137 4.44727 3.77357 3.86719 4.37515 3.86719H8.20338C8.80496 3.86719 9.29716 4.44727 9.29716 5.15625C9.29716 6.76758 9.51592 8.31445 9.92062 9.7582C10.0409 10.2094 9.95343 10.7121 9.64717 11.073L7.24086 13.909Z"
-                            fill="#E15544" />
-                    </svg>
-                    <a>Tel: 015140468925</a>
-                </div>
-            </div>
+<div class="contact-me-wrapper">
+    <section class="contact-me-content content-limitation" appAnimateOnScroll>
+        <div class="contact-me-headline">
+            <h1>{{'contact.title' | translate}}</h1>
+            <img src="assets/img/icons/arrow-right-down.svg" alt="">
         </div>
+        <div class="contact-me-infos-wrapper">
+            <div class="contact-me-infos">
+                <div class="description">
+                    <p>{{'contact.description' | translate}}</p>
+                </div>
+                <div class="contact-me-directly">
+                    <div (click)="mailNow()" class="contact-me-email">
+                        <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="email-icon"
+                                d="M23.665 5H4.73296C3.43138 5 2.37829 6.125 2.37829 7.5L2.36646 22.5C2.36646 23.875 3.43138 25 4.73296 25H23.665C24.9666 25 26.0315 23.875 26.0315 22.5V7.5C26.0315 6.125 24.9666 5 23.665 5ZM23.1917 10.3125L14.8261 15.8375C14.4475 16.0875 13.9505 16.0875 13.5719 15.8375L5.20626 10.3125C4.91045 10.1125 4.73296 9.775 4.73296 9.4125C4.73296 8.575 5.59673 8.075 6.27119 8.5125L14.199 13.75L22.1268 8.5125C22.8012 8.075 23.665 8.575 23.665 9.4125C23.665 9.775 23.4875 10.1125 23.1917 10.3125Z"
+                                fill="#E15544" />
+                        </svg>
 
-        <div class="contact-me-arrow">
+                        <a>E-mail: herzfeldjulian&#64;hotmail.de</a>
+                    </div>
+                    <div (click)="callNow()" class="contact-me-phone">
+                        <svg width="27" height="31" viewBox="0 0 27 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="phone-icon"
+                                d="M7.24086 13.909C8.8159 17.557 11.3535 20.5348 14.4489 22.4039L16.8552 19.568C17.1505 19.2199 17.588 19.1039 17.9708 19.2586C19.1959 19.7355 20.5194 19.9934 21.8756 19.9934C22.4772 19.9934 22.9694 20.5734 22.9694 21.2824V25.7812C22.9694 26.4902 22.4772 27.0703 21.8756 27.0703C11.605 27.0703 3.28137 17.2605 3.28137 5.15625C3.28137 4.44727 3.77357 3.86719 4.37515 3.86719H8.20338C8.80496 3.86719 9.29716 4.44727 9.29716 5.15625C9.29716 6.76758 9.51592 8.31445 9.92062 9.7582C10.0409 10.2094 9.95343 10.7121 9.64717 11.073L7.24086 13.909Z"
+                                fill="#E15544" />
+                        </svg>
+                        <a>Tel: 015140468925</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-me-arrow">
+                <button type="button" class="scroll-top" (click)="goTop()" aria-label="Scroll to top">
+                    <img src="assets/img/icons/arrow-up.svg" alt="" />
+                </button>
+            </div>
+
+
+        </div>
+        <form autocomplete="off" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+            <div class="contact-me-input-wrapper">
+                <div class="contact-me-input-left">
+                    <div class="input-wrapper input-name">
+                        <input #name="ngModel" [(ngModel)]="contactData.name" class="input-left" type="text"
+                            [placeholder]="'contact.name-placeholder' | translate" name="Your Name" id="name" required>
+                        @if (!name.valid && contactForm.submitted) {
+                        <span class="error-message">{{'contact.input-name-error' | translate}}</span>
+                        }
+                    </div>
+                    <div class="input-wrapper input-email">
+                        <input #email="ngModel" [(ngModel)]="contactData.email" class="input-left" type=""
+                            [placeholder]="'contact.email-placeholder' | translate" name="contact_email" id="email"
+                            required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                            autocomplete="new-password">
+                        @if (!email.valid && contactForm.submitted) {
+                        <span class="error-message">{{'contact.input-email-error' | translate}}</span>
+                        }
+                    </div>
+                </div>
+                <div class="input-wrapper input-message-container">
+                    <textarea autocomplete="off" #message="ngModel" minlength="4" [(ngModel)]="contactData.message"
+                        name="Your Message" [placeholder]="'contact.message-placeholder' | translate" id="message"
+                        required></textarea>
+                    @if (!message.valid && contactForm.submitted) {
+                    <span class="error-message">{{'contact.input-message-error' | translate}}</span>
+                    }
+                </div>
+            </div>
+            <div class="contact-me-send-section">
+                <label class="contact-me-checkbox">
+                    <input type="checkbox" [formControl]="checkbox" />
+                    <span class="checkbox-image"></span>
+                    <span>{{'contact.accept-before' | translate}} <a href="privacy-policy">{{'contact.accept-link' |
+                            translate}}</a> {{'contact.accept-after' | translate}}</span>
+                </label>
+                <div class="contact-me-send">
+                    <button type="submit" value="submit" [disabled]="!checkbox.value">{{'contact.btn-send' |
+                        translate}}</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="contact-me-arrow-mobile">
             <button type="button" class="scroll-top" (click)="goTop()" aria-label="Scroll to top">
                 <img src="assets/img/icons/arrow-up.svg" alt="" />
             </button>
         </div>
+        <div class="contact-me-directly-mobile">
+            <div (click)="mailNow()" class="contact-me-email">
+                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="email-icon"
+                        d="M23.665 5H4.73296C3.43138 5 2.37829 6.125 2.37829 7.5L2.36646 22.5C2.36646 23.875 3.43138 25 4.73296 25H23.665C24.9666 25 26.0315 23.875 26.0315 22.5V7.5C26.0315 6.125 24.9666 5 23.665 5ZM23.1917 10.3125L14.8261 15.8375C14.4475 16.0875 13.9505 16.0875 13.5719 15.8375L5.20626 10.3125C4.91045 10.1125 4.73296 9.775 4.73296 9.4125C4.73296 8.575 5.59673 8.075 6.27119 8.5125L14.199 13.75L22.1268 8.5125C22.8012 8.075 23.665 8.575 23.665 9.4125C23.665 9.775 23.4875 10.1125 23.1917 10.3125Z"
+                        fill="#E15544" />
+                </svg>
 
-
-    </div>
-    <form autocomplete="off" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-        <div class="contact-me-input-wrapper">
-            <div class="contact-me-input-left">
-                <div class="input-wrapper input-name">
-                    <input #name="ngModel" [(ngModel)]="contactData.name" class="input-left" type="text"
-                        [placeholder]="'contact.name-placeholder' | translate" name="Your Name" id="name" required>
-                    @if (!name.valid && contactForm.submitted) {
-                    <span class="error-message">{{'contact.input-name-error' | translate}}</span>
-                    }
-                </div>
-                <div class="input-wrapper input-email">
-                    <input #email="ngModel" [(ngModel)]="contactData.email" class="input-left" type=""
-                        [placeholder]="'contact.email-placeholder' | translate" name="contact_email" id="email" required
-                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" autocomplete="new-password">
-                    @if (!email.valid && contactForm.submitted) {
-                    <span class="error-message">{{'contact.input-email-error' | translate}}</span>
-                    }
-                </div>
+                <a>E-mail: herzfeldjulian&#64;hotmail.de</a>
             </div>
-            <div class="input-wrapper input-message-container">
-                <textarea autocomplete="off" #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="Your Message"
-                    [placeholder]="'contact.message-placeholder' | translate" id="message" required></textarea>
-                @if (!message.valid && contactForm.submitted) {
-                <span class="error-message">{{'contact.input-message-error' | translate}}</span>
+            <div (click)="callNow()" class="contact-me-phone">
+                <svg width="27" height="31" viewBox="0 0 27 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="phone-icon"
+                        d="M7.24086 13.909C8.8159 17.557 11.3535 20.5348 14.4489 22.4039L16.8552 19.568C17.1505 19.2199 17.588 19.1039 17.9708 19.2586C19.1959 19.7355 20.5194 19.9934 21.8756 19.9934C22.4772 19.9934 22.9694 20.5734 22.9694 21.2824V25.7812C22.9694 26.4902 22.4772 27.0703 21.8756 27.0703C11.605 27.0703 3.28137 17.2605 3.28137 5.15625C3.28137 4.44727 3.77357 3.86719 4.37515 3.86719H8.20338C8.80496 3.86719 9.29716 4.44727 9.29716 5.15625C9.29716 6.76758 9.51592 8.31445 9.92062 9.7582C10.0409 10.2094 9.95343 10.7121 9.64717 11.073L7.24086 13.909Z"
+                        fill="#E15544" />
+                </svg>
+                <a>Tel: 015140468925</a>
+            </div>
+        </div>
+
+        @if (overlayStatus) {
+        <div class="overlay">
+            <div class="overlay-content">
+                @if (overlayStatus === 'success') {
+                <p>{{'contact.success-message' | translate}}</p>
+                }
+                @if (overlayStatus === 'error') {
+                <p>{{'contact.error-message' | translate}}</p>
                 }
             </div>
         </div>
-        <div class="contact-me-send-section">
-            <label class="contact-me-checkbox">
-                <input type="checkbox" [formControl]="checkbox" />
-                <span class="checkbox-image"></span>
-                <span>{{'contact.accept-before' | translate}} <a href="privacy-policy">{{'contact.accept-link' |
-                        translate}}</a> {{'contact.accept-after' | translate}}</span>
-            </label>
-            <div class="contact-me-send">
-                <button type="submit" value="submit" [disabled]="!checkbox.value">{{'contact.btn-send' |
-                    translate}}</button>
-            </div>
-        </div>
-    </form>
-
-    <div class="contact-me-arrow-mobile">
-        <button type="button" class="scroll-top" (click)="goTop()" aria-label="Scroll to top">
-            <img src="assets/img/icons/arrow-up.svg" alt="" />
-        </button>
-    </div>
-    <div class="contact-me-directly-mobile">
-        <div (click)="mailNow()" class="contact-me-email">
-            <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="email-icon"
-                    d="M23.665 5H4.73296C3.43138 5 2.37829 6.125 2.37829 7.5L2.36646 22.5C2.36646 23.875 3.43138 25 4.73296 25H23.665C24.9666 25 26.0315 23.875 26.0315 22.5V7.5C26.0315 6.125 24.9666 5 23.665 5ZM23.1917 10.3125L14.8261 15.8375C14.4475 16.0875 13.9505 16.0875 13.5719 15.8375L5.20626 10.3125C4.91045 10.1125 4.73296 9.775 4.73296 9.4125C4.73296 8.575 5.59673 8.075 6.27119 8.5125L14.199 13.75L22.1268 8.5125C22.8012 8.075 23.665 8.575 23.665 9.4125C23.665 9.775 23.4875 10.1125 23.1917 10.3125Z"
-                    fill="#E15544" />
-            </svg>
-
-            <a>E-mail: herzfeldjulian&#64;hotmail.de</a>
-        </div>
-        <div (click)="callNow()" class="contact-me-phone">
-            <svg width="27" height="31" viewBox="0 0 27 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="phone-icon"
-                    d="M7.24086 13.909C8.8159 17.557 11.3535 20.5348 14.4489 22.4039L16.8552 19.568C17.1505 19.2199 17.588 19.1039 17.9708 19.2586C19.1959 19.7355 20.5194 19.9934 21.8756 19.9934C22.4772 19.9934 22.9694 20.5734 22.9694 21.2824V25.7812C22.9694 26.4902 22.4772 27.0703 21.8756 27.0703C11.605 27.0703 3.28137 17.2605 3.28137 5.15625C3.28137 4.44727 3.77357 3.86719 4.37515 3.86719H8.20338C8.80496 3.86719 9.29716 4.44727 9.29716 5.15625C9.29716 6.76758 9.51592 8.31445 9.92062 9.7582C10.0409 10.2094 9.95343 10.7121 9.64717 11.073L7.24086 13.909Z"
-                    fill="#E15544" />
-            </svg>
-            <a>Tel: 015140468925</a>
-        </div>
-    </div>
-
-    @if (overlayStatus) {
-    <div class="overlay">
-        <div class="overlay-content">
-            @if (overlayStatus === 'success') {
-            <p>{{'contact.success-message' | translate}}</p>
-            }
-            @if (overlayStatus === 'error') {
-            <p>{{'contact.error-message' | translate}}</p>
-            }
-        </div>
-    </div>
-    }
-</section>
+        }
+    </section>
+</div>

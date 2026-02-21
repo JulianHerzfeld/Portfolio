@@ -2,12 +2,13 @@ import { NgForOf } from '@angular/common';
 import { Component } from '@angular/core';
 import { ScrollService } from '../../../models/scroll-service';
 import { TranslateModule } from '@ngx-translate/core';
+import { AnimateOnScrollDirective } from '../../shared/animate-on-scroll.directive';
 
 
 @Component({
   selector: 'app-my-skills',
   standalone: true,
-  imports: [NgForOf, TranslateModule],
+  imports: [NgForOf, TranslateModule, AnimateOnScrollDirective],
   templateUrl: './my-skills.component.html',
   styleUrl: './my-skills.component.scss'
 })
@@ -42,6 +43,12 @@ export class MySkillsComponent {
 
   goToContact() {
     this.scrollService.scrollToId('contact-me');
+  }
+
+
+  getChallengeDelay() {
+    const maxIndex = Math.max(this.skillImgs.length, this.skillImgsMobile.length);
+    return maxIndex * 100;
   }
 
 }

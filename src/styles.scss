@@ -17,19 +17,33 @@
     scroll-padding-top: 92px;
 }
 
-html, body {
+html,
+body {
     min-height: 100%;
+    overflow-x: hidden;
 }
 
 body {
-    background: linear-gradient(
-        155deg,
-        #0B042D 0%,
-        #0B042D 20%,
-        #1F0B7F 55%,
-        #0B042D 90%,
-        #0B042D 100%
-    );
+    background: linear-gradient(155deg,
+            #0B042D 0%,
+            #0B042D 20%,
+            #1F0B7F 55%,
+            #0B042D 90%,
+            #0B042D 100%);
+}
+
+.navbar-bg {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(180deg,
+            #0B042D 0%,
+            #0B042D 30%,
+            #0B042D 65%,
+            rgba(11, 4, 45, 0.8) 80%,
+            rgba(11, 4, 45, 0.7) 90%,
+            rgba(11, 4, 45, 0.5) 100%);
+    z-index: 100;
 }
 
 .content-limitation {
