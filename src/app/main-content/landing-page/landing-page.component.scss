@@ -2,7 +2,7 @@
 
 .main-content {
     position: relative;
-    height: 660px;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     padding-left: 105px;
@@ -23,7 +23,7 @@
                 }
 
                 @include respond(mobile) {
-                    font-size: 20px;
+                    font-size: 24px;
                 }
             }
 
@@ -40,7 +40,7 @@
                 }
 
                 @include respond(mobile) {
-                    font-size: 16px;
+                    font-size: 20px;
                 }
             }
         }
@@ -50,61 +50,38 @@
         padding-left: 40px;
     }
 
-    @include respond(xl) {
-        height: 600px;
-    }
-
     @include respond(md) {
-        height: 540px;
-    }
-
-    @include respond(sm) {
         flex-direction: column-reverse;
         align-items: center;
         gap: 8px;
-        height: unset;
+        top: 100px;
         padding-right: 40px;
+    }
+
+    @include respond(mobile) {
+        top: 140px;
     }
 }
 
 .content-right {
-    height: 539px;
-
-    @include respond(xl) {
-        display: flex;
-        align-items: center;
-    }
-
-    @include respond(sm) {
-        height: unset;
-    }
+    height: calc(100vh - 25%);
+    display: flex;
+    align-items: flex-end;
 }
 
 .portrait {
-    width: 539px;
-    height: 554px;
-
-    @include respond(xl) {
-        width: 440px;
-        height: 455px;
-    }
+    width: clamp(280px, 40vw, 539px);
+    height: auto;
 
     @include respond(md) {
-        width: 340px;
-        height: 355px;
-    }
-
-    @include respond(sm) {
-        max-width: 388px;
-        width: 100%;
-        height: unset;
+        width: clamp(280px, 70vw, 539px);
     }
 }
 
 .contact-me {
     transform: rotate(270deg);
     position: absolute;
-    top: 140px;
+    top: 240px;
     left: -56px;
     color: #E15544;
     font-size: 18px;
@@ -119,30 +96,21 @@
         cursor: pointer;
     }
 
-    @include respond(sm) {
+    @include respond(md) {
         display: none;
     }
 }
 
 .content-left {
     position: relative;
-    height: 575px;
+    height: calc(100vh - 23%);
     display: flex;
     flex-direction: column;
-    justify-content: end;
-
-    @include respond(xl) {
-        height: 500px;
-    }
+    justify-content: flex-end;
 
     @include respond(md) {
-        height: 450px;
-    }
-
-    @include respond(sm) {
         justify-content: unset;
         text-align: center;
-        height: unset;
         margin-bottom: 72px;
     }
 }
@@ -163,7 +131,7 @@
         }
     }
 
-    @include respond(sm) {
+    @include respond(md) {
         display: none;
     }
 }

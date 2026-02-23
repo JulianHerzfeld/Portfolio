@@ -27,17 +27,15 @@
     >div {
         >img {
             width: 490px;
-            height: 452px;
+            height: 100%;
             filter: brightness(1.8);
 
             @include respond(xl) {
                 width: 450px;
-                height: 412px;
             }
 
             @include respond(lg) {
                 width: 350px;
-                height: 340px;
             }
 
             @include respond(md) {
